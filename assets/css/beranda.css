@@ -1,3 +1,7 @@
+.header {
+    background-color: white;
+}
+
 .header .title:hover {
     text-decoration: none;
     color: var(--primary-color);
@@ -43,6 +47,7 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+    background-color: white;
 }
 
 .header .dropdown-link {
@@ -53,4 +58,34 @@
 .header .dropdown-link:hover {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+.featured {
+    padding-top: 7rem;
+}
+
+.featured .main {
+    border-radius: 6px;
+    width: 70%;
+    height: 400px;
+    position: relative;
+}
+
+.featured .main .desc {
+    position: absolute;
+    bottom: 0;
+}
+
+.featured .main .desc .date {
+    font-size: .8rem;
+}
+
+.featured .list {
+    width: 30%;
+}
+
+.featured .item .bg-img {
+    width: 160px;
+    height: 100%;
+    border-radius: 4px;
 }

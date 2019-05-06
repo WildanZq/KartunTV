@@ -10,3 +10,14 @@
 .bg-custom {
     background-color: var(--primary-color);
 }
+
+.bg-img {
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,.2);
+}
+
+.star {
+    font-size: .6rem;
+    color:	rgb(212,175,55);
+}
