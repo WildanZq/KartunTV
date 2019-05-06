@@ -36,7 +36,7 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(-6px);
-    border-radius: 6px;
+    border-radius: 0 0 6px 6px;
     transition: 300ms;
     top: 100%;
     left: 0;
