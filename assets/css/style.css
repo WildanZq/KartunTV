@@ -1,8 +1,12 @@
 :root {
-    --primary-color: #3a5bbc;
+    --primary-color: #4b6ac6;
     --shadow: thin solid black;
 }
 
 .text-custom {
     color: var(--primary-color);
+}
+
+.bg-custom {
+    background-color: var(--primary-color);
 }

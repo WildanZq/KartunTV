@@ -1,0 +1,56 @@
+.header .title:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.header .link {
+    font-size: .9rem;
+    color: rgba(0,0,0,.7);
+    cursor: pointer;
+}
+
+.header .link:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.header .search-input {
+    width: 200px;
+}
+
+.header .divider {
+    height: 30px;
+}
+
+.header .dropdown {
+    position: relative;
+}
+
+.header .dropdown .item {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    border-radius: 6px;
+    transition: 300ms;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.header .dropdown:hover .item {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header .dropdown-link {
+    display: block;
+    color: rgba(0,0,0,.7);
+}
+
+.header .dropdown-link:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
