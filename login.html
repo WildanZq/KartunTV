@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container--home">
+      <div>
+        <div class="c-box c-box--middle bg--super-white">
+          <div class="c-box__wrapper">
+            <div class="c-box__header text-center mb--3 mt--2">
+              <a href="/">
+                <h1 class="logo">KartunTv</h1>
+              </a>
+            </div>
+            <div class="c-box__body bg--super-white">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="i-u-flex-vertical-center" style="height: 100%">
+                    <a class="btn i-button i-button--red i-button--block i-button--large txt-bold mt-3" href="/users/auth/google_oauth2" style="border:none">
+                      <i class="pr-3 fa fa-google"></i>
+                        Masuk dengan Google
+                    </a>
+                    <a class="btn i-button i-button--facebook i-button--block i-button--large txt-bold mt-3" href="/users/auth/facebook" style="border:none">
+                      <i class="pr-3 fa fa-facebook"></i>
+                        Masuk dengan Facebook
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-2 mt--2 mb--2">
+                  <div class="i-u-flex-vertical-center text-center" style="height: 100%">
+                    <div style="border-radius: 50%; border: 1px solid #dcdcdc; width: 50px; height: 50px; margin: auto; line-height: 48px; font-size: 14px">OR</div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="mb--1 text-center txt-bold text--large">Masuk Langsung</div>
+                  <form novalidate="novalidate" class="simple_form new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post">
+                    <input name="utf8" type="hidden" value="✓">
+                      <input type="hidden" name="authenticity_token" value="rdr7DrjgpDF+7KVUT3ng4TRu78QwI8luWueihQj6IiN97zIr0KG8IwTlIrkjf+6X4wqp1afkRUgx1yhknMcB7g==">
+                        <div class="form-inputs">
+                          <div class="form-group email optional user_email">
+                            <label class="control-label email optional" for="user_email">Email</label>
+                              <input class="form-control string email optional" autofocus="autofocus" type="email" name="user[email]" id="user_email">
+                          </div>
+                          <div class="form-group password optional user_password">
+                            <label class="control-label password optional" for="user_password">Password</label>
+                              <input class="form-control password optional" type="password" name="user[password]" id="user_password">
+                          </div>
+                          <div class="form-group boolean optional user_remember_me">
+                            <div class="checkbox"><input value="0" type="hidden" name="user[remember_me]">
+                              <label class="boolean optional" for="user_remember_me">
+                                <input class="boolean optional mr-2" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">Remember me</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-actions">
+                          <input type="submit" name="commit" value="Masuk" class="btn btn-default btn i-button i-button--block i-button--large bg--orange fg--white txt-bold" data-disable-with="Masuk">
+                            <div class="text-center mt--1">
+                              Belum terdaftar?
+                                <a class="fg--orange" href="/users/sign_up">Daftar</a>
+                            </div>
+                            <div class="text-center mt--1">
+                              Lupa password?
+                                <a class="fg--orange" href="/users/password/new">Reset Password</a>
+                            </div>
+                          </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
