@@ -13,20 +13,23 @@
 </head>
 <body>
     <nav class="header shadow-sm position-fixed w-100">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="#" class="title h3 text-custom">KartunTV</a>
-            <div class="nav d-flex align-items-center">
-                <div class="input-group input-group-sm search-input mr-3">
+        <div class="d-flex justify-content-between align-items-center px-md-5 pl-3 pr-2">
+            <a href="#" class="title text-custom mb-1">KartunTV</a>
+            <div class="nav align-items-center d-flex">
+                <div class="input-group input-group-sm search-input mr-3 d-md-flex d-none">
                     <input type="text" class="form-control" placeholder="Cari judul film...">
                     <div class="input-group-append">
-                        <span class="input-group-text bg-custom text-white" id="basic-addon1">
+                        <span class="input-group-text bg-custom text-white">
                             <i class="fas fa-search"></i>
                         </span>
                     </div>
                 </div>
-                <a href="#" class="link px-3 py-4">Populer</a>
-                <a href="#" class="link px-3 py-4">Terbaru</a>
-                <div class="link dropdown px-3 py-4">
+                <button class="btn d-block d-md-none">
+                    <i class="fas fa-search text-custom"></i>
+                </button>
+                <a href="#" class="link px-3 py-4 d-none d-lg-block">Populer</a>
+                <a href="#" class="link px-3 py-4 d-none d-lg-block">Terbaru</a>
+                <div class="link dropdown px-3 py-4 d-none d-lg-block">
                     <span>Genre</span>
                     <i class="fas fa-chevron-down fa-xs ml-1"></i>
                     <div class="item shadow-sm">
@@ -44,15 +47,26 @@
                         <a href="#" class="dropdown-link px-4 py-2 border-top">Keluar</a>
                     </div>
                 </div>
+                <button class="btn ml-1 d-block d-lg-none border btn-nav" onclick="toggleNav()">
+                    <i class="fas fa-bars fa-lg text-custom"></i>
+                </button>
+            </div>
+        </div>
+        <div class="side-nav position-absolute border-top" id="sideNav">
+            <div class="overlay position-absolute" onclick="toggleNav()"></div>
+            <div class="content d-flex flex-column">
+                <a href="#" class="link w-100 px-4 py-3">Populer</a>
+                <a href="#" class="link w-100 px-4 py-3">Terbaru</a>
             </div>
         </div>
     </nav>
+    <div class="separator"></div>
     <div class="film-wrapper-wrapper">
         <div class="film-wrapper">
             <iframe src="https://www.youtube.com/embed/dfTPlsIq7d0" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-    <div class="film-desc container mt-5">
+    <div class="film-desc container mt-4">
         <h1 class="h4">Judul Film</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
         <div class="d-flex">

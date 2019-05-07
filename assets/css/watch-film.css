@@ -1,7 +1,11 @@
+.separator {
+    height: 70px;
+    width: 100%;
+}
+
 .film-wrapper-wrapper {
     width: 100%;
     background-color: black;
-    padding-top: 70px;
 }
 
 .film-wrapper {
