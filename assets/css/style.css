@@ -186,3 +186,39 @@ html {
         right: -300px !important;
     }
 }
+
+@media (max-width: 991px) {
+    .film .item {
+        width: 30%;
+    }
+
+    .film .item .bg-img {
+        height: 240px;
+    }
+}
+
+@media (max-width: 767px) {
+    .film .item .bg-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .film .item {
+        width: 47%;
+    }
+
+    .film .item .bg-img {
+        height: 60vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .film .item {
+        width: 100%;
+    }
+
+    .film .item .bg-img {
+        height: 120vw;
+    }
+}
