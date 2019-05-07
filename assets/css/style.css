@@ -22,6 +22,11 @@
     color:	rgb(212,175,55);
 }
 
+.star-lg {
+    font-size: .8rem;
+    color:	rgb(212,175,55);
+}
+
 .header {
     background-color: white;
     z-index: 98;
@@ -93,12 +98,16 @@
     border-radius: 4px;
     height: 200px;
     position: relative;
+    overflow: hidden;
 }
 
 .film .item .bg-img .icon {
     position: absolute;
-    right: .7rem;
-    top: .2rem;
+    right: 0;
+    padding: .2rem .8rem;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    border-radius: 0 0 0 4px;
 }
 
 .film .item .title {
