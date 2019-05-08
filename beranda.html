@@ -64,48 +64,94 @@
         </div>
     </nav>
     <div class="featured container">
-        <div class="d-flex">
-            <div class="main bg-img">
-                <div class="desc px-4 pb-2">
-                    <h5 class="mb-0">Judul Film</h5>
-                    <div class="icon d-flex mb-1 align-items-center">
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star star"></i>
-                        <i class="fas fa-star-half-alt star"></i>
-                        <i class="far fa-star star"></i>
-                        <span class="date text-muted ml-2">20 September 2019</span>
+        <div class="d-flex flex-column flex-lg-row">
+            <div id="featuredMovie" class="carousel slide main" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#featuredMovie" data-slide-to="0" class="active"></li>
+                    <li data-target="#featuredMovie" data-slide-to="1"></li>
+                    <li data-target="#featuredMovie" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="main bg-img w-100"
+                            style="background-image: url(http://cdn1.nflximg.net/images/1557/4091557.jpg)">
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="carousel-item">
+                        <div class="main bg-img w-100"
+                            style="background-image: url(https://vignette.wikia.nocookie.net/nickelodeon/images/f/f8/The_Smudges_Title_Card.jpeg/revision/latest?cb=20160808200045)">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main bg-img w-100"
+                            style="background-image: url(http://1.bp.blogspot.com/-FWt-WCGWmu8/VaMGO7BkegI/AAAAAAAAKak/z5PeUdvuT08/s1600/tom-and-jerry-facebook-cover-01.jpg)">
+                        </div>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#featuredMovie" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#featuredMovie" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="list ml-4 d-flex flex-column justify-content-between">
-                <div class="item d-flex">
+            <div class="list ml-lg-3 mt-3 mt-lg-0 d-flex flex-lg-column justify-content-between flex-wrap flex-md-nowrap">
+                <div class="item d-flex align-items-stretch flex-lg-row flex-column">
                     <div class="bg-img"></div>
-                    <div class="ml-3 d-flex flex-column justify-content-center my-2">
-                        <h5 class="title mb-1">Judul Film</h5>
-                        <p class="desc mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
+                        <h5 class="title mb-1 text-truncate">Judul Film</h5>
+                        <small class="text-truncate">20 Maret 2019</small>
+                        <div class="d-flex mt-2">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star-half-alt star"></i>
+                            <i class="far fa-star star"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="item d-flex">
+                <div class="item d-flex align-items-stretch flex-lg-row flex-column">
                     <div class="bg-img"></div>
-                    <div class="ml-3 d-flex flex-column justify-content-center my-2">
-                        <h5 class="title mb-1">Judul Film</h5>
-                        <p class="desc mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
+                        <h5 class="title mb-1 text-truncate">Judul Film</h5>
+                        <small class="text-truncate">20 Maret 2019</small>
+                        <div class="d-flex mt-2">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star-half-alt star"></i>
+                            <i class="far fa-star star"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="item d-flex">
+                <div class="item d-flex align-items-stretch flex-lg-row flex-column">
                     <div class="bg-img"></div>
-                    <div class="ml-3 d-flex flex-column justify-content-center my-2">
-                        <h5 class="title mb-1">Judul Film</h5>
-                        <p class="desc mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
+                        <h5 class="title mb-1 text-truncate">Judul Film</h5>
+                        <small class="text-truncate">20 Maret 2019</small>
+                        <div class="d-flex mt-2">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star-half-alt star"></i>
+                            <i class="far fa-star star"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="item d-flex">
+                <div class="item d-flex align-items-stretch flex-lg-row flex-column">
                     <div class="bg-img"></div>
-                    <div class="ml-3 d-flex flex-column justify-content-center my-2">
-                        <h5 class="title mb-1">Judul Film</h5>
-                        <p class="desc mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
+                        <h5 class="title mb-1 text-truncate">Judul Film</h5>
+                        <small class="text-truncate">20 Maret 2019</small>
+                        <div class="d-flex mt-2">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star-half-alt star"></i>
+                            <i class="far fa-star star"></i>
+                        </div>
                     </div>
                 </div>
             </div>

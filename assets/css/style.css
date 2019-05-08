@@ -209,16 +209,6 @@ html {
     }
 
     .film .item .bg-img {
-        height: 60vw;
-    }
-}
-
-@media (max-width: 425px) {
-    .film .item {
-        width: 100%;
-    }
-
-    .film .item .bg-img {
-        height: 120vw;
+        height: 55vw;
     }
 }
