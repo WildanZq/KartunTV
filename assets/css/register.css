@@ -7,7 +7,7 @@
 }
 
 .indicator {
-    width: 25%;
+    width: 6rem;
     position: relative;
 }
 
@@ -42,6 +42,11 @@
     border-width: 2px !important;
     border-color: var(--primary-color) !important;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.reg-form {
+    overflow-x: hidden;
+    height: 36rem;
 }
 
 .exp-date {
