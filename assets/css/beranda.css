@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 767px) {
+    .featured {
+        padding-top: 5.6rem;
+    }
+
     .featured .main {
         height: 300px;
     }

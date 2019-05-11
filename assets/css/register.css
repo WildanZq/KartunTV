@@ -1,0 +1,84 @@
+.title-wrapper {
+    padding-top: 7rem;
+}
+
+.card-wrapper {
+    max-width: 400px;
+}
+
+.indicator {
+    width: 25%;
+    position: relative;
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #dee2e6;
+    top: 15px;
+    width: 100%;
+    left: 0;
+}
+
+.indicator .icon {
+    cursor: pointer;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: .8rem;
+    transition: 400ms;
+}
+
+.indicator .icon:hover {
+    border-width: 2px !important;
+}
+
+.indicator .icon.active {
+    border-width: 2px !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.exp-date {
+    text-align: center;
+    width: 3.6rem;
+    -moz-appearance:textfield;
+}
+
+.exp-date::-webkit-inner-spin-button, .exp-date::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#identityForm {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 500ms;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#cardForm {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 500ms;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+#identityForm.active, #cardForm.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -1,5 +1,6 @@
 :root {
     --primary-color: #4b6ac6;
+    --primary-dark-color: #3b539b;
 }
 
 .overlay {
@@ -13,6 +14,16 @@
 
 .text-custom {
     color: var(--primary-color);
+}
+
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: var(--primary-dark-color);
+    color: white;
 }
 
 .bg-custom {
