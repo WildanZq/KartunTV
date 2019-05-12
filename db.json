@@ -1,0 +1,40 @@
+{
+    "movies": [
+        {
+            "title": "Tayo: The Little Bus",
+            "img": "https://video.oznoz.com/media/brands/1434665833_S1_TayoTheLittleBus_295x366.jpg",
+            "rating": 5,
+            "date": "2 Desember 2018"
+        },
+        {
+            "title": "Peppa Pig",
+            "img": "https://m.media-amazon.com/images/M/MV5BNDUyODQ0NjAtYTZjMS00MzBjLWI1ZjYtMzBhYzgyYzdjMTE4XkEyXkFqcGdeQXVyMzU5OTE2NTI@._V1_.jpg",
+            "rating": 4,
+            "date": "20 Maret 2019"
+        },
+        {
+            "title": "Sofia The First",
+            "img": "https://dm4.imgix.net/https%3A%2F%2Fwww.discountmags.com%2Fshopimages%2Fproducts%2Fnormal%2Fextra%2FSofia-The-First-Cover-2014-Issue.jpg?auto=format%2Ccompress&cs=strip&h=1018&w=774&s=7a7e080df30c258f56e4e917461f379d",
+            "rating": 3,
+            "date": "10 Januari 2019"
+        },
+        {
+            "title": "Curious George",
+            "img": "https://i.kym-cdn.com/photos/images/original/000/726/383/1a9.jpg",
+            "rating": 4.2,
+            "date": "12 September 2018"
+        },
+        {
+            "title": "Elena of Avalor",
+            "img": "https://nfrnonline.com/wp-content/uploads/1-Elena-FINAL-APPROVED-COVER-222x300.jpg",
+            "rating": 2.8,
+            "date": "27 Februari 2019"
+        },
+        {
+            "title": "Arthur",
+            "img": "https://images.gr-assets.com/books/1344271893l/431365.jpg",
+            "rating": 3.4,
+            "date": "15 Februari 2019"
+        }
+    ]
+}
