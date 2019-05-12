@@ -65,11 +65,11 @@
     </nav>
     <div class="featured container">
         <div class="d-flex flex-column flex-lg-row">
-            <div id="featuredMovie" class="carousel slide main" data-ride="carousel">
+            <div id="featuredCarousel" class="carousel slide main" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#featuredMovie" data-slide-to="0" class="active"></li>
-                    <li data-target="#featuredMovie" data-slide-to="1"></li>
-                    <li data-target="#featuredMovie" data-slide-to="2"></li>
+                    <li data-target="#featuredCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#featuredCarousel" data-slide-to="1"></li>
+                    <li data-target="#featuredCarousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -88,16 +88,16 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#featuredMovie" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#featuredCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#featuredMovie" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#featuredCarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="list ml-lg-3 mt-3 mt-lg-0 d-flex flex-lg-column justify-content-between flex-wrap flex-md-nowrap">
+            <div class="list ml-lg-3 mt-3 mt-lg-0 d-flex flex-lg-column justify-content-between flex-wrap flex-md-nowrap" id="featuredMovie">
                 <div class="item d-flex align-items-stretch flex-lg-row flex-column">
                     <div class="bg-img"></div>
                     <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
@@ -159,12 +159,12 @@
     </div>
     <div class="film container mt-5 mb-5">
         <h1 class="h4">Rekomendasi untuk Anda</h1>
-        <div class="list d-flex flex-wrap justify-content-between mt-4">
+        <div class="list d-flex flex-wrap justify-content-between mt-4" id="recommendedMovie">
             <div class="item mb-3">
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -174,7 +174,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -184,7 +184,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -194,7 +194,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -204,7 +204,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -214,7 +214,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -224,7 +224,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -234,7 +234,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -244,7 +244,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -254,7 +254,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -264,7 +264,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -274,7 +274,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -286,5 +286,38 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        $(document).ready(getData());
+
+        function getData() {
+            $.ajax({
+                url: 'db.json',
+                type: 'GET',
+                dataType: 'json',
+                success: (data) => {
+                    let featuredMovies = '';
+                    featuredData = getRandom(data.movies, 4);
+                    featuredData.forEach(movie => {
+                        const star = generateStar(movie.rating);
+    
+                        featuredMovies += `
+                            <a href="#" class="item d-flex align-items-stretch flex-lg-row flex-column">
+                                <div class="bg-img" style="background-image: url(${movie.img})"></div>
+                                <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
+                                    <h5 class="title mb-1 text-truncate">${movie.title}</h5>
+                                    <small class="text-truncate">${movie.date}</small>
+                                    <div class="d-flex mt-2">${star}</div>
+                                </div>
+                            </a>
+                        `;
+                    });
+                    $('#featuredMovie').html(featuredMovies);
+    
+                    const recommendedMovies = generateMovieList(data.movies, 6);
+                    $('#recommendedMovie').html(recommendedMovies);
+                }
+            });
+        }
+    </script>
 </body>
 </html>

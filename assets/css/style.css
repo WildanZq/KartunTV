@@ -147,6 +147,11 @@
 
 .film .item {
     width: 15%;
+    color: black;
+}
+
+.film .item:hover {
+    text-decoration: none;
 }
 
 .film .item .bg-img {
@@ -154,6 +159,12 @@
     height: 200px;
     position: relative;
     overflow: hidden;
+    transition: box-shadow 400ms, transform 400ms;
+}
+
+.film .item:hover .bg-img {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transform: translateY(-3px);
 }
 
 .film .item .bg-img .icon {

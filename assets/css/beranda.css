@@ -14,10 +14,24 @@
     width: 30%;
 }
 
+.featured .item {
+    color: black;
+}
+
+.featured .item:hover {
+    text-decoration: none;
+}
+
 .featured .item .bg-img {
     width: 40%;
     min-height: 92px;
     border-radius: 4px;
+    transition: box-shadow 400ms, transform 400ms;
+}
+
+.featured .item:hover .bg-img {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transform: translateY(-3px);
 }
 
 .featured .item .overview {
