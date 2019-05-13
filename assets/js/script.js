@@ -23,15 +23,15 @@ function getRandom(arr, n) {
 function generateStar(n, size = 'sm') {
     let star = '', starCount = 5, fullStar = Math.floor(n);
     while (fullStar--) {
-        star += `<i class="fas fa-star star${size === 'lg' ? '-lg' : null}"></i>`;
+        star += `<i class="fas fa-star star${size === 'lg' ? '-lg' : ''}"></i>`;
         starCount--;
     }
     if (n % 1 > 0) {
-        star += `<i class="fas fa-star-half-alt star${size === 'lg' ? '-lg' : null}"></i>`;
+        star += `<i class="fas fa-star-half-alt star${size === 'lg' ? '-lg' : ''}"></i>`;
         starCount--;
     }
     while (starCount--) {
-        star += `<i class="far fa-star star${size === 'lg' ? '-lg' : null}"></i>`;
+        star += `<i class="far fa-star star${size === 'lg' ? '-lg' : ''}"></i>`;
     }
     return star;
 }
