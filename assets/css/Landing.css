@@ -1,0 +1,138 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height:1.5;
+	/*font:  15px/1.5 Arial, Helvetica, sans-serif; {.....Jika 3 baris atas dirangkum....}*/
+	padding: 0;
+	margin: 0;
+	background-color:#ffffff;
+}
+
+/*Global*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* Header*/
+header{
+	background: #ffffff;
+	color: #4b6ac6;     /*Warna Font Header putih*/
+	padding-top: 30px;
+	min-height: 70px;
+	
+}
+
+header a{
+	color: #85806c;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+
+}
+
+header ul{
+	margin: 0;
+	padding: 0;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding {
+	float:left ;	
+}
+
+header #branding h1{
+	margin: 0;
+
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a {
+	color: #4b6ac6;                  /*memberi warna merah pada header "Kartun" & "HOME"*/
+	font-weight: bold;
+}
+
+
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+/*Showcase*/
+#showcase{
+	min-height: 400px;
+	background: url('../img/showcase.jpg') ;
+	border-bottom: #4b6ac6 3px solid;
+	border-top: #4b6ac6 3px solid;
+}
+#showcase{
+	color: #ffffff;
+
+}
+
+#showcase .button_1 a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#showcase .button_1 {
+	height: 40px;
+	background: #e8491d;
+	border: 0px;
+	color: #ffffff;
+}
+
+/*Mid*/
+#newsletter {
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+#boxes {
+	margin-top: 20px;
+}
+#boxes .box {
+	float : left;
+	text-align: center;
+	padding: 0 60px 0 60px;
+}
+
+
+#price .button_1 {
+	height: 40px;
+	background: #e8491d;
+	border: 0px;
+	color: #ffffff;
+	
+
+}
+#price .button_1 a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+//Info
+#Info {
+	margin-top: 20px;
+}
+#Info .hubungi{
+	float : left;
+	text-align: left;
+	padding: 0 60px 0 60px;
+}
+#Info .pesan{
+	float : right;
+	text-align: left;
+	padding: 0 60px 0 60px;
+}
