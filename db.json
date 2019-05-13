@@ -1,40 +1,80 @@
 {
     "movies": [
         {
+            "id": "s4qH_e7tKA8",
             "title": "Tayo: The Little Bus",
+            "desc": "Serial animasi Korea Selatan yang diproduksi oleh Iconix Entertainment dan Educational Broadcasting System.",
             "img": "https://video.oznoz.com/media/brands/1434665833_S1_TayoTheLittleBus_295x366.jpg",
             "rating": 5,
-            "date": "2 Desember 2018"
+            "genre": [
+                "Petualangan"
+            ],
+            "date": "2 Desember 2018",
+            "production": "Iconix Entertainment"
         },
         {
+            "id": "-qVJUWIyZUc",
             "title": "Peppa Pig",
+            "desc": "Serial televisi animasi prasekolah Inggris yang disutradarai dan diproduksi oleh Astley Baker Davies bekerja sama dengan Entertainment One. Acara ini berkisar di sekitar Peppa, seekor babi betina antropomorfik.",
             "img": "https://m.media-amazon.com/images/M/MV5BNDUyODQ0NjAtYTZjMS00MzBjLWI1ZjYtMzBhYzgyYzdjMTE4XkEyXkFqcGdeQXVyMzU5OTE2NTI@._V1_.jpg",
             "rating": 4,
-            "date": "20 Maret 2019"
+            "genre": [
+                "Komedi"
+            ],
+            "date": "31 Mei 2004",
+            "production": "Astley Baker Davies"
         },
         {
+            "id": "IUyzT3-MfG0",
             "title": "Sofia The First",
+            "desc": "Serial televisi Amerika Serikat yang menggabungkan karakter dari franchise Disney Princess. Bintang dalam serial ini, Ariel Winter sebagai Sofia, seorang gadis muda yang menjadi seorang putri ketika ibunya, Miranda, menikahi Raja Roland II.",
             "img": "https://dm4.imgix.net/https%3A%2F%2Fwww.discountmags.com%2Fshopimages%2Fproducts%2Fnormal%2Fextra%2FSofia-The-First-Cover-2014-Issue.jpg?auto=format%2Ccompress&cs=strip&h=1018&w=774&s=7a7e080df30c258f56e4e917461f379d",
             "rating": 3,
-            "date": "10 Januari 2019"
+            "genre": [
+                "Edukasi",
+                "Petualangan"
+            ],
+            "date": "8 September 2018",
+            "production": "Disney Princess"
         },
         {
+            "id": "7Qg-yBK-UTM",
             "title": "Curious George",
+            "desc": "Serial televisi tahun 2006 yang didasarkan pada serial buku anak-anak Curious George dan filmnya. Serial ini memiliki 108 episode. Di Indonesia, serial ini ditayangkan oleh stasiun televisi Antv sejak tahun 2008 dan GTV sejak tahun 2018.",
             "img": "https://i.kym-cdn.com/photos/images/original/000/726/383/1a9.jpg",
             "rating": 4.2,
-            "date": "12 September 2018"
+            "genre": [
+                "Edukasi",
+                "Petualangan"
+            ],
+            "date": "1 April 2015",
+            "production": "PBS Kids"
         },
         {
+            "id": "_mkIHDwvtYM",
             "title": "Elena of Avalor",
+            "desc": "Serial televisi animasi komputer Amerika yang debut pada 20 Juni 2016 melalui permintaan di Kanada, Pada 1 Juli melalui internet, pada 22 Juli 2016 dengan tayangan perdana di Disney Channel di Amerika Serikat.",
             "img": "https://nfrnonline.com/wp-content/uploads/1-Elena-FINAL-APPROVED-COVER-222x300.jpg",
             "rating": 2.8,
-            "date": "27 Februari 2019"
+            "genre": [
+                "Petualangan",
+                "Edukasi"
+            ],
+            "date": "22 Juli 2016",
+            "production": "Disney Junior"
         },
         {
+            "id": "F6reT_c2Kts",
             "title": "Arthur",
+            "desc": "Serial televisi pendidikan Kanada / Amerika untuk anak-anak usia 4 hingga 8, yang dibuat oleh Cookie Jar Group dan WGBH untuk PBS.",
             "img": "https://images.gr-assets.com/books/1344271893l/431365.jpg",
             "rating": 3.4,
-            "date": "15 Februari 2019"
+            "genre": [
+                "Komedi",
+                "Edukasi"
+            ],
+            "date": "7 Oktober 1996",
+            "production": "Cookie Jar Group"
         }
     ]
 }

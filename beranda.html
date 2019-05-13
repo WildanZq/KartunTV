@@ -287,21 +287,21 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        $(document).ready(getData());
+        $(document).ready(loadData());
 
-        function getData() {
+        function loadData() {
             $.ajax({
                 url: 'db.json',
                 type: 'GET',
                 dataType: 'json',
                 success: (data) => {
                     let featuredMovies = '';
-                    featuredData = getRandom(data.movies, 4);
+                    const featuredData = getRandom(data.movies, 4);
                     featuredData.forEach(movie => {
                         const star = generateStar(movie.rating);
     
                         featuredMovies += `
-                            <a href="#" class="item d-flex align-items-stretch flex-lg-row flex-column">
+                            <a href="watch-film.html?id=${movie.id}" class="item d-flex align-items-stretch flex-lg-row flex-column">
                                 <div class="bg-img" style="background-image: url(${movie.img})"></div>
                                 <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
                                     <h5 class="title mb-1 text-truncate">${movie.title}</h5>

@@ -66,17 +66,17 @@
     </nav>
     <div class="separator"></div>
     <div class="film-wrapper-wrapper">
-        <div class="film-wrapper">
-            <iframe src="https://www.youtube.com/embed/dfTPlsIq7d0" frameborder="0" allowfullscreen></iframe>
+        <div class="film-wrapper" id="videoPlayer">
+            <iframe frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     <div class="film-desc container mt-4">
-        <h1 class="h4">Judul Film</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <h1 class="h4" id="title">Judul Film</h1>
+        <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
         <div class="d-flex">
             <div class="mr-5">
                 <small class="text-muted">Rating</small>
-                <div class="mb-2">
+                <div class="mb-2" id="rating">
                     <i class="fas fa-star star-lg"></i>
                     <i class="fas fa-star star-lg"></i>
                     <i class="fas fa-star star-lg"></i>
@@ -84,34 +84,24 @@
                     <i class="far fa-star star-lg"></i>
                 </div>
                 <small class="text-muted">Genre</small>
-                <p>Komedi</p>
+                <p id="genre">Komedi</p>
             </div>
             <div>
                 <small class="text-muted">Tanggal Rilis</small>
-                <p class="mb-2">20 Maret 2019</p>
+                <p class="mb-2" id="date">20 Maret 2019</p>
                 <small class="text-muted">Produksi</small>
-                <p>MondoMedia</p>
+                <p id="production">MondoMedia</p>
             </div>
         </div>
     </div>
     <div class="film container mt-4 mb-5">
         <h1 class="h4">Film Serupa</h1>
-        <div class="list d-flex flex-wrap justify-content-between mt-4">
+        <div class="list d-flex flex-wrap justify-content-between mt-4" id="recommendedMovie">
             <div class="item mb-3">
-                <div class="bg-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/51GZ%2BwK1ukL._SY445_.jpg)">
+                <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
-                    </div>
-                </div>
-                <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
-                <small class="date text-muted">20 Maret 2019</small>
-            </div>
-            <div class="item mb-3">
-                <div class="bg-img" style="background-image: url(https://www.kidscanpress.com/sites/default/files/products/franklin_and_the_cookies.jpg)">
-                    <div class="icon">
-                        <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -121,7 +111,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -131,7 +121,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -141,7 +131,7 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -151,7 +141,17 @@
                 <div class="bg-img">
                     <div class="icon">
                         <i class="fas fa-star star"></i>
-                        <small><b>4</b></small>
+                        <small><b>-</b></small>
+                    </div>
+                </div>
+                <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
+                <small class="date text-muted">20 Maret 2019</small>
+            </div>
+            <div class="item mb-3">
+                <div class="bg-img">
+                    <div class="icon">
+                        <i class="fas fa-star star"></i>
+                        <small><b>-</b></small>
                     </div>
                 </div>
                 <h2 class="title mb-0 mt-2 text-truncate">Judul Film</h2>
@@ -163,5 +163,36 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        $(document).ready(loadData());
+
+        function loadData() {
+            const id = window.location.search.substr(1).split('=')[1];
+            $('#videoPlayer').html(`<iframe src="https://www.youtube.com/embed/${id}" frameborder="0" allowfullscreen></iframe>`);
+
+            $.ajax({
+                url: 'db.json',
+                type: 'GET',
+                dataType: 'json',
+                success: (data) => {
+                    const movie = data.movies.filter(movie => movie.id === id)[0];
+                    $('#title').html(movie.title);
+                    $('#desc').html(movie.desc);
+                    $('#rating').html(generateStar(movie.rating, 'lg'));
+                    $('#date').html(movie.date);
+                    $('#production').html(movie.production);
+                    let genre = '';
+                    movie.genre.forEach((val, i) => {
+                        genre += val;
+                        i !== movie.genre.length-1 ? genre += ', ' : null;
+                    });
+                    $('#genre').html(genre);
+
+                    const recommendedMovies = generateMovieList(data.movies, 6);
+                    $('#recommendedMovie').html(recommendedMovies);
+                }
+            });
+        }
+    </script>
 </body>
 </html>
