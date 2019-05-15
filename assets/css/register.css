@@ -45,7 +45,7 @@
 }
 
 .reg-form {
-    overflow: visible;
+    overflow: hidden;
     height: 36rem;
 }
 
@@ -53,6 +53,10 @@
     text-align: center;
     width: 3.6rem;
     -moz-appearance:textfield;
+}
+
+.cvv {
+    width: 4.6rem;
 }
 
 .exp-date::-webkit-inner-spin-button, .exp-date::-webkit-outer-spin-button {
