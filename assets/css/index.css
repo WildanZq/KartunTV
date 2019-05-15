@@ -95,6 +95,10 @@
     width: 25%;
 }
 
+.feature .item img {
+    height: 140px;
+}
+
 .feature .item .capt {
     font-size: 1.1rem;
     font-weight: normal;
@@ -110,6 +114,10 @@
 
 .contact-form textarea {
     width: 400px;
+}
+
+.contact img {
+    height: 220px;
 }
 
 @media (max-width: 991px) {
@@ -131,6 +139,25 @@
     .feature .item {
         width: 100%;
         margin-bottom: 1rem;
+    }
+
+    .feature .item img {
+        height: auto;
+        width: 70%;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact img {
+        height: auto;
+        width: 70%;
     }
 }
 

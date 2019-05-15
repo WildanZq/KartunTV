@@ -142,7 +142,7 @@
 
 .header .btn-nav {
     border-radius: 4px;
-    margin-right: 1rem;
+    margin-right: .6rem;
 }
 
 .header .side-nav {
@@ -243,6 +243,10 @@ html {
 
     .film .item .bg-img {
         height: 240px;
+    }
+
+    .header .link::after {
+        right: auto;
     }
 }
 
