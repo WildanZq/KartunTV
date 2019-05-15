@@ -45,7 +45,7 @@
 }
 
 .reg-form {
-    overflow-x: hidden;
+    overflow: visible;
     height: 36rem;
 }
 

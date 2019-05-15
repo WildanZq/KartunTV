@@ -46,8 +46,9 @@
             <div onclick="show2()" id="nav2" class="icon border shadow-sm">2</div>
         </div>
         <form method="POST" class="reg-form mt-3 position-relative">
-            <div class="card shadow active" id="identityForm">
-                <div class="card-body">
+            <div class="card active border-0" id="identityForm">
+                <div class="card-body shadow border">
+                    <h2 class="h5 text-center">Identitas</h2>
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" id="username" class="form-control" placeholder="johnwick">
@@ -64,9 +65,11 @@
                         <button type="button" class="btn btn-custom px-4" onclick="show2()">Lanjut</button>
                     </div>
                 </div>
+                <span class="text-center mt-4">Sudah punya akun? klik <a href="login.html">Masuk</a></span>
             </div>
-            <div class="card shadow mb-5" id="cardForm">
-                <div class="card-body">
+            <div class="card mb-5" id="cardForm">
+                <div class="card-body shadow">
+                    <h2 class="h5 text-center">Kartu Kredit</h2>
                     <div class="form-group">
                         <label for="frontName">Nama Depan</label>
                         <input type="text" id="frontName" class="form-control" placeholder="John">
@@ -90,8 +93,8 @@
                         <label for="cvv">Kode Keamanan (CVV)</label>
                         <input type="number" id="cvv" class="form-control" placeholder="127">
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <button type="button" class="btn btn-outline-secondary px-4" onclick="show1()">Kembali</button>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span onclick="show1()" class="text-muted cursor-pointer hover-underline">Kembali</span>
                         <a href="beranda.html" class="btn btn-custom px-4">Daftar</a>
                     </div>
                 </div>

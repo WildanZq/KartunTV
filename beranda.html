@@ -315,7 +315,7 @@
                     });
                     $('#featuredMovie').html(featuredMovies);
     
-                    const recommendedMovies = generateMovieList(data.movies, 6);
+                    const recommendedMovies = generateMovieList(data.movies, data.movies.length);
                     $('#recommendedMovie').html(recommendedMovies);
                 }
             });

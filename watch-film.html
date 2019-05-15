@@ -182,10 +182,10 @@
                     $('#desc').html(movie.desc);
                     $('#rating').html(generateStar(movie.rating, 'lg'));
                     $('#date').html(movie.date);
-                    $('#production').html(movie.production);
+                    $('#production').html(`<a href="">${movie.production}</a>`);
                     let genre = '';
                     movie.genre.forEach((val, i) => {
-                        genre += val;
+                        genre += `<a href="#">${val}</a>`;
                         i !== movie.genre.length-1 ? genre += ', ' : null;
                     });
                     $('#genre').html(genre);

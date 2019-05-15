@@ -12,6 +12,14 @@
     background-color: rgba(0, 0, 0, .4);
 }
 
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .text-custom {
     color: var(--primary-color);
 }
@@ -65,11 +73,30 @@
     font-size: .9rem;
     color: rgba(0,0,0,.7);
     cursor: pointer;
+    position: relative;
 }
 
 .header .link:hover {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+.header .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 5px 5px 0 0;
+    transition: 300ms;
+}
+
+.header .link:hover::after {
+    width: 100%;
 }
 
 .header .search-input {
