@@ -4,16 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kartun TV</title>
+    <title>KartunTV</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <div class="navbar-main__container">
-        <nav class="fixed-top navbar-main navbar-main--home">
-            <div class="navbar-header"></div>
-        </nav>
+    <nav class="header shadow-sm position-fixed w-100">
+        <div class="d-flex justify-content-between align-items-center px-md-5 pl-3 pr-2">
+            <a href="./" class="title text-custom mb-1">KartunTV</a>
+            <div class="nav align-items-center d-flex">
+                <a href="#" class="link px-3 py-4 d-none d-lg-block">Fitur</a>
+                <a href="#" class="link px-3 py-4 d-none d-lg-block">Harga</a>
+                <a href="#" class="link px-3 py-4 d-none d-lg-block">Kontak</a>
+                <div class="divider border-right mx-2 d-none d-lg-block"></div>
+                <a href="login.html" class="link px-3 py-4">Masuk</a>
+                <a href="register.html" class="btn btn-custom mx-3">
+                    Daftar
+                </a>
+                <button class="btn ml-1 d-block d-lg-none border btn-nav" onclick="toggleNav()">
+                    <i class="fas fa-bars fa-lg text-custom"></i>
+                </button>
+            </div>
+        </div>
+        <div class="side-nav position-absolute border-top" id="sideNav">
+            <div class="overlay position-absolute" onclick="toggleNav()"></div>
+            <div class="content d-flex flex-column">
+                <a href="#" class="link w-100 px-4 py-3">Fitur</a>
+                <a href="#" class="link w-100 px-4 py-3">Harga</a>
+                <a href="#" class="link w-100 px-4 py-3">Kontak</a>
+            </div>
+        </div>
+    </nav>
+    <div class="opening container d-flex align-items-center">
+        <div class="title">
+            <h1 class="text-custom mb-3">Tontonan Berkualitas untuk Buah Hati</h1>
+            <p>Kami menyediakan berbagai tontonan dari sumber terpercaya yang edukatif, menarik, dan aman untuk buah hati Anda</p>
+            <a href="register.html" class="btn btn-custom px-3">Daftar Sekarang</a>
+            <br>
+            <small class="text-muted mx-auto">Dapatkan gratis 14 hari</small>
+        </div>
+        <div class="poster w-75 justify-content-end d-md-flex d-none">
+            <div id="posterCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#posterCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#posterCarousel" data-slide-to="1"></li>
+                    <li data-target="#posterCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="item bg-img"
+                            style="background-image: url(http://cdn1.nflximg.net/images/1557/4091557.jpg)">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item bg-img"
+                            style="background-image: url(https://vignette.wikia.nocookie.net/nickelodeon/images/f/f8/The_Smudges_Title_Card.jpeg/revision/latest?cb=20160808200045)">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item bg-img"
+                            style="background-image: url(http://1.bp.blogspot.com/-FWt-WCGWmu8/VaMGO7BkegI/AAAAAAAAKak/z5PeUdvuT08/s1600/tom-and-jerry-facebook-cover-01.jpg)">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#posterCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#posterCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="feature container pt-5" id="feature">
+        <h2 class="text-custom text-center content-title">Keuntungan Anda</h2>
+        <div class="d-flex align-items-center justify-content-between mt-5 flex-column flex-md-row">
+            <div class="item d-flex flex-column align-items-center">
+                <img src="./assets/img/devices.svg" height="140px">
+                <h3 class="capt text-center mt-3">Tonton dimanapun kapanpun</h3>
+            </div>
+            <div class="item d-flex flex-column align-items-center">
+                <img src="./assets/img/child.svg" height="140px">
+                <h3 class="capt text-center mt-3">Konten sesuai dengan buah hati</h3>
+            </div>
+            <div class="item d-flex flex-column align-items-center">
+                <img src="./assets/img/cheap.svg" height="140px">
+                <h3 class="capt text-center mt-3">Harga sangat terjangkau</h3>
+            </div>
+        </div>
+    </div>
+    <div class="price container-fluid bg-custom py-5 mt-5 text-white d-flex flex-column align-items-center" id="price">
+        <h2 class="content-title text-white mb-4">Dapatkan Harga Terbaik</h2>
+        <h3 class="display-2 mt-2">49<span class="h5">rb/bulan</span></h3>
+        <a href="register.html" class="btn btn-light mt-2 mb-1 px-3">Daftar Sekarang</a>
+        <small>Dapatkan gratis 14 hari</small>
+    </div>
+    <div class="contact container pt-5 mb-5" id="contact">
+        <h2 class="text-custom content-title text-center">Hubungi Kami</h2>
+        <div class="d-flex mt-5 flex-column flex-md-row justify-content-center align-items-center">
+            <img src="assets/img/contact.svg" height="220px">
+            <div class="contact-form ml-5">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Halo!"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-custom px-4">Kirim</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
