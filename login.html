@@ -4,79 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KartunTV</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/register.css">
 </head>
 <body>
-    <div class="container--home">
-      <div>
-        <div class="c-box c-box--middle bg--super-white">
-          <div class="c-box__wrapper">
-            <div class="c-box__header text-center mb--3 mt--2">
-              <a href="/">
-                <h1 class="logo">KartunTv</h1>
-              </a>
-            </div>
-            <div class="c-box__body bg--super-white">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="i-u-flex-vertical-center" style="height: 100%">
-                    <a class="btn i-button i-button--red i-button--block i-button--large txt-bold mt-3" href="/users/auth/google_oauth2" style="border:none">
-                      <i class="pr-3 fa fa-google"></i>
-                        Masuk dengan Google
-                    </a>
-                    <a class="btn i-button i-button--facebook i-button--block i-button--large txt-bold mt-3" href="/users/auth/facebook" style="border:none">
-                      <i class="pr-3 fa fa-facebook"></i>
-                        Masuk dengan Facebook
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-2 mt--2 mb--2">
-                  <div class="i-u-flex-vertical-center text-center" style="height: 100%">
-                    <div style="border-radius: 50%; border: 1px solid #dcdcdc; width: 50px; height: 50px; margin: auto; line-height: 48px; font-size: 14px">OR</div>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="mb--1 text-center txt-bold text--large">Masuk Langsung</div>
-                  <form novalidate="novalidate" class="simple_form new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post">
-                    <input name="utf8" type="hidden" value="✓">
-                      <input type="hidden" name="authenticity_token" value="rdr7DrjgpDF+7KVUT3ng4TRu78QwI8luWueihQj6IiN97zIr0KG8IwTlIrkjf+6X4wqp1afkRUgx1yhknMcB7g==">
-                        <div class="form-inputs">
-                          <div class="form-group email optional user_email">
-                            <label class="control-label email optional" for="user_email">Email</label>
-                              <input class="form-control string email optional" autofocus="autofocus" type="email" name="user[email]" id="user_email">
-                          </div>
-                          <div class="form-group password optional user_password">
-                            <label class="control-label password optional" for="user_password">Password</label>
-                              <input class="form-control password optional" type="password" name="user[password]" id="user_password">
-                          </div>
-                          <div class="form-group boolean optional user_remember_me">
-                            <div class="checkbox"><input value="0" type="hidden" name="user[remember_me]">
-                              <label class="boolean optional" for="user_remember_me">
-                                <input class="boolean optional mr-2" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">Remember me</label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-actions">
-                          <input type="submit" name="commit" value="Masuk" class="btn btn-default btn i-button i-button--block i-button--large bg--orange fg--white txt-bold" data-disable-with="Masuk">
-                            <div class="text-center mt--1">
-                              Belum terdaftar?
-                                <a class="fg--orange" href="/users/sign_up">Daftar</a>
-                            </div>
-                            <div class="text-center mt--1">
-                              Lupa password?
-                                <a class="fg--orange" href="/users/password/new">Reset Password</a>
-                            </div>
-                          </div>
-                    </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <nav class="header shadow-sm position-fixed w-100">
+    <div class="d-flex justify-content-between align-items-center px-md-5 pl-3 pr-2">
+      <a href="./" class="title text-custom mb-1">KartunTV</a>
+      <div class="nav align-items-center d-flex">
+        <a href="./#feature" class="link px-3 py-4 d-none d-lg-block">Fitur</a>
+        <a href="./#price" class="link px-3 py-4 d-none d-lg-block">Harga</a>
+        <a href="./#contact" class="link px-3 py-4 d-none d-lg-block">Kontak</a>
+        <div class="divider border-right mx-2 d-none d-lg-block"></div>
+        <a href="login.html" class="link px-3 py-4">Masuk</a>
+        <a href="register.html" class="btn btn-custom mx-3">
+          Daftar
+        </a>
+        <button class="btn ml-1 d-block d-lg-none border btn-nav" onclick="toggleNav()">
+          <i class="fas fa-bars fa-lg text-custom"></i>
+        </button>
       </div>
     </div>
-  </body>
+    <div class="side-nav position-absolute border-top" id="sideNav">
+      <div class="overlay position-absolute" onclick="toggleNav()"></div>
+      <div class="content d-flex flex-column">
+        <a href="./#feature" class="link w-100 px-4 py-3">Fitur</a>
+        <a href="./#price" class="link w-100 px-4 py-3">Harga</a>
+        <a href="./#contact" class="link w-100 px-4 py-3">Kontak</a>
+      </div>
+    </div>
+  </nav>
+  <div class="title-wrapper">
+    <h1 class="text-center h4 text-custom">Masuk</h1>
+  </div>
+  <div class="card-wrapper mx-auto px-3 mt-4">
+    <div class="card active border-0">
+      <div class="card-body shadow border">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" class="form-control" placeholder="johnwick">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="************">
+        </div>
+        <div class="d-flex justify-content-end">
+          <a href="beranda.html" class="btn btn-custom px-4">Masuk</a>
+        </div>
+      </div>
+      <span class="text-center mt-4">Belum punya akun? klik <a href="register.html">Daftar</a></span>
+    </div>
+  </div>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
 </html>

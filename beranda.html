@@ -283,6 +283,7 @@
                 <small class="date text-muted">20 Maret 2019</small>
             </div>
         </div>
+        <div class="list d-flex flex-wrap justify-content-between" id="recommendedMovie2"></div>
     </div>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -303,7 +304,7 @@
                         const star = generateStar(movie.rating);
     
                         featuredMovies += `
-                            <a href="watch-film.html?id=${movie.id}" class="item d-flex align-items-stretch flex-lg-row flex-column">
+                            <a href="watch-film.html?id=${movie.id}" class="item d-flex align-items-stretch flex-lg-row flex-column mb-sm-0 mb-2">
                                 <div class="bg-img" style="background-image: url(${movie.img})"></div>
                                 <div class="overview ml-3 d-flex flex-column justify-content-center my-2">
                                     <h5 class="title mb-1 text-truncate">${movie.title}</h5>
@@ -317,6 +318,8 @@
     
                     const recommendedMovies = generateMovieList(data.movies, data.movies.length);
                     $('#recommendedMovie').html(recommendedMovies);
+                    const recommendedMovies2 = generateMovieList(data.movies, data.movies.length);
+                    $('#recommendedMovie2').html(recommendedMovies2);
                 }
             });
         }
