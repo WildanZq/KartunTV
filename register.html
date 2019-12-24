@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/register.css">
 </head>
+
 <body>
+    <!-- navigasi -->
     <nav class="header shadow-sm position-fixed w-100">
         <div class="d-flex justify-content-between align-items-center px-md-5 pl-3 pr-2">
             <a href="./" class="title text-custom mb-1">KartunTV</a>
             <div class="nav align-items-center d-flex">
-                <a href="./#feature" class="link px-3 py-4 d-none d-lg-block">Fitur</a>
-                <a href="./#price" class="link px-3 py-4 d-none d-lg-block">Harga</a>
-                <a href="./#contact" class="link px-3 py-4 d-none d-lg-block">Kontak</a>
                 <div class="divider border-right mx-2 d-none d-lg-block"></div>
                 <a href="login.html" class="link px-3 py-4">Masuk</a>
                 <button class="btn btn-custom mx-3">
@@ -40,7 +40,10 @@
     <div class="title-wrapper">
         <h1 class="text-center h4 text-custom">Daftar</h1>
     </div>
-    <div class="card-wrapper mx-auto px-3 mt-4">
+    <!--akhir dari navigasi-->
+
+    <!-- isinya -->
+    <div class="card-wrapper mx-auto px-3 mt-4 min-vh-100">
         <div class="indicator d-flex justify-content-between align-items-center mx-auto">
             <div onclick="show1()" id="nav1" class="icon border shadow-sm active">1</div>
             <div onclick="show2()" id="nav2" class="icon border shadow-sm">2</div>
@@ -60,7 +63,8 @@
                     <div class="form-group">
                         <label for="password">Password</label>
                         <div class="input-group">
-                            <input type="password" id="password" class="form-control border-right-0" placeholder="************">
+                            <input type="password" id="password" class="form-control border-right-0"
+                                placeholder="************">
                             <div class="input-group-append cursor-pointer" onclick="togglePass()">
                                 <span class="input-group-text text-muted bg-white">
                                     <i id="eyeShow" class="fas fa-eye"></i>
@@ -110,7 +114,12 @@
                 </div>
             </div>
         </form>
-    </div>
+    </div> <!--akhir dari isinya-->
+
+    <!-- footer -->
+    <div id="footer"></div><!-- akhir footer -->
+
+    <!-- script -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -142,5 +151,7 @@
             $('#cardForm').addClass('active');
         }
     </script>
+    <!--akhir dari script-->
 </body>
+
 </html>

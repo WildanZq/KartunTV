@@ -55,3 +55,22 @@ function generateMovieList(movies, n) {
     });
     return recommendedMovies;
 }
+
+$('.page-scroll').on('click', function (e) {
+    
+    var idTujuan = $(this).attr('href');
+    var tujuan = $(idTujuan);
+
+    // console.log(tujuan.offset().top);
+    // $('html, body').scrollTop(tujuan.offset().top-50);
+
+    $('html, body').animate({
+        scrollTop : tujuan.offset().top -50
+    },900,'swing');
+
+    e.preventDefault();
+});
+
+$(function(){
+    $("#footer").load("footer.html")
+})

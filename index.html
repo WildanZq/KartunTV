@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,19 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/index.css">
+
+
 </head>
+
 <body>
+    <!-- navigasi -->
     <nav class="header shadow-sm position-fixed w-100">
         <div class="d-flex justify-content-between align-items-center px-md-5 pl-3 pr-2">
-            <a href="./" class="title text-custom mb-1">KartunTV</a>
+            <a href="#home" class="title text-custom mb-1 page-scroll">KartunTV</a>
             <div class="nav align-items-center d-flex">
-                <a href="#feature" class="link px-3 py-4 d-none d-lg-block">Fitur</a>
-                <a href="#price" class="link px-3 py-4 d-none d-lg-block">Harga</a>
-                <a href="#contact" class="link px-3 py-4 d-none d-lg-block">Kontak</a>
+                <a href="#feature" class="link px-3 py-4 d-none d-lg-block page-scroll">Fitur</a>
+                <a href="#price" class="link px-3 py-4 d-none d-lg-block page-scroll">Harga</a>
+                <a href="#contact" class="link px-3 py-4 d-none d-lg-block page-scroll">Kontak</a>
                 <div class="divider border-right mx-2 d-none d-lg-block"></div>
                 <a href="login.html" class="link px-3 py-4">Masuk</a>
                 <a href="register.html" class="btn btn-custom mx-3">
@@ -36,11 +41,14 @@
                 <a href="#contact" class="link w-100 px-4 py-3">Kontak</a>
             </div>
         </div>
-    </nav>
+    </nav><!-- akhir navigasi -->
+
+
     <div class="opening container d-flex align-items-center">
         <div class="title">
             <h1 class="text-custom mb-3">Tontonan Berkualitas untuk Buah Hati</h1>
-            <p>Kami menyediakan berbagai tontonan dari sumber terpercaya yang edukatif, menarik, dan aman untuk buah hati Anda</p>
+            <p>Kami menyediakan berbagai tontonan dari sumber terpercaya yang edukatif, menarik, dan aman untuk buah
+                hati Anda</p>
             <a href="register.html" class="btn btn-custom px-3">Daftar Sekarang</a>
             <br>
             <small class="text-muted mx-auto">Dapatkan gratis 14 hari</small>
@@ -80,6 +88,8 @@
             </div>
         </div>
     </div>
+
+    <!-- feature -->
     <div class="feature container pt-5" id="feature">
         <h2 class="text-custom text-center content-title">Keuntungan Anda</h2>
         <div class="d-flex align-items-center justify-content-between mt-5 flex-column flex-md-row">
@@ -96,13 +106,17 @@
                 <h3 class="capt text-center mt-3">Harga sangat terjangkau</h3>
             </div>
         </div>
-    </div>
+    </div><!-- akhir feature -->
+
+    <!-- price -->
     <div class="price container-fluid bg-custom py-5 mt-5 text-white d-flex flex-column align-items-center" id="price">
         <h2 class="content-title text-white mb-4">Dapatkan Harga Terbaik</h2>
         <h3 class="display-2 mt-2">49<span class="h5">rb/bulan</span></h3>
         <a href="register.html" class="btn btn-light mt-2 mb-1 px-3">Daftar Sekarang</a>
         <small>Dapatkan gratis 14 hari</small>
-    </div>
+    </div><!-- akhir price -->
+
+    <!-- contact -->
     <div class="contact container pt-5 mb-5" id="contact">
         <h2 class="text-custom content-title text-center">Hubungi Kami</h2>
         <div class="d-flex mt-5 flex-column flex-md-row justify-content-center align-items-center">
@@ -121,10 +135,24 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- akhir contact -->
+
+
+    <!-- footer -->
+    <div id="footer">
+
+    </div><!-- akhir footer -->
+
+    <!-- script -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- <script>
+        $(function(){
+            $("#footer").load("footer.html")
+        })
+    </script> -->
 </body>
+
 </html>

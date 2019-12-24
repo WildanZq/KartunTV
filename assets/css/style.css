@@ -59,14 +59,14 @@
     z-index: 98;
 }
 
-.header .title {
+.title {
     font-size: 1.75rem;
     font-weight: 500;
 }
 
 .header .title:hover {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-dark-color);
 }
 
 .header .link {
@@ -209,6 +209,22 @@
 
 html {
   font-size: .8rem;
+}
+
+.footerStyle{
+    background-color: #001b36;
+    color: white;
+}
+
+footer a{
+    color : #d7d7d8;
+    white-space : normal;
+}
+
+
+footer a:hover{
+    text-decoration: none;
+    color: white;
 }
 
 @media (min-width: 576px) {
